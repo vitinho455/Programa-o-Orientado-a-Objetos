@@ -1,6 +1,6 @@
 package exercicios_básicos;
 
-public class product {
+public class Product {
 
 	/*
 	Programa para teste de utilização da saida de dados utilizando o printf e os placehoulders

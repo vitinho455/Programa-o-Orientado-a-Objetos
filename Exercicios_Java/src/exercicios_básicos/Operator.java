@@ -2,7 +2,7 @@ package exercicios_básicos;
 
 import java.util.Scanner;
 
-public class operator {
+public class Operator {
 	
 	/*
 	Uma operadora de telefonia cobra R$ 50.00 por um plano básico que

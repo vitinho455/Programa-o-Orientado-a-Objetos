@@ -2,7 +2,7 @@ package exercicios_básicos;
 
 import java.util.Scanner;
 
-public class day_of_the_week {
+public class Day_Of_The_Week {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

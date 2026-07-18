@@ -2,6 +2,9 @@ package exercicios_básicos;
 
 import java.util.Scanner;
 
+/*
+ * Usando a estrutura de repetição while e for para a soma de números inteiros.
+ */
 public class Sum_of_Integer_Numbers {
 
 	public static void main(String[] args) {
@@ -18,8 +21,10 @@ public class Sum_of_Integer_Numbers {
 			
 			sum += x;
 		}
+
 		sc.close();
 		System.out.printf("%d", sum);
+			
+		}
 	}
 
-}
