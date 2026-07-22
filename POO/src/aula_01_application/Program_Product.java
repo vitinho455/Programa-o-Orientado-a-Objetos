@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import aula_01_entities.Product;
 
-public class Program {
+public class Program_Product {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -15,13 +15,13 @@ public class Program {
 		
 		System.out.println("Enter product data: ");
 		System.out.print("Name: ");
-		String name = sc.nextLine();
+		product.name = sc.nextLine();
 		
 		System.out.print("Price: ");
-		Double price = sc.nextDouble();
+		product.price = sc.nextDouble();
 		
 		System.out.print("Quantity in Stock: ");
-		int quantityStock = sc.nextInt();
+		product.quantity = sc.nextInt();
 		
 		System.out.println("Product data: " + product);
 		
