@@ -4,13 +4,11 @@ public class Student {
 	
 	private String name;
 	private String email;
-	private int room;
 	
-	public Student(String name, String email, int room) {
+	public Student(String name, String email) {
 			
 			this.name = name;
 			this.email = email;
-			this.room = room;
 	}
 
 	public String getName() {
@@ -28,21 +26,11 @@ public class Student {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-
-	public int getRoom() {
-		return room;
-	}
-
-	public void setRoom(int room) {
-		this.room = room;
-	}
 	
 	public String toString() {
 		
 		return 
-		+ room 
-		+ ": " 
-		+ name 
+		name 
 		+ ", " 
 		+ email;
 		

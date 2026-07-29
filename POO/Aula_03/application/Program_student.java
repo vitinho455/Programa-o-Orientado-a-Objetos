@@ -11,17 +11,16 @@ public class Program_student {
 		
 		Scanner sc = new Scanner(System.in);
 		
+		Student[] student = new Student[10];
+		System.out.println();
 		
 		System.out.print("How many rooms will be rented?");
 		int x = sc.nextInt();
 		sc.nextLine();
 		
-		Student[] student = new Student[x];
-		System.out.println();
-		
-		for (int i = 0; i < student.length; i++) {
+		for (int i = 1; i <= x; i++) {
 				
-			System.out.println("Rent #" + (i + 1));
+			System.out.println("Rent #" + i);
 						
 			System.out.print("Name: ");
 			String name = sc.nextLine();
@@ -36,17 +35,20 @@ public class Program_student {
 			
 			System.out.println();
 
-			student[i] = new Student(name,email,room);
+			student[room] = new Student(name,email);
 			
 		}
-		sc.close();
 		
 		System.out.println("Busy Rooms: ");
 		
-		for (Student student2 : student) {
-			System.out.println(student2);
+		for (int i = 0; i < 10 ; i++) {
+			if(student[i] != null) {
+				System.out.println(i + ": " + student[i]);	
+			}
+
+			sc.close();
+			
 		}
-		
 	}
 
 }
