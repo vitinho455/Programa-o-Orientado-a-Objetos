@@ -40,6 +40,12 @@ public class Employee {
 		this.salary = salary;
 	}
 	
+	public void increaseSalary(double percentage) {
+		
+		salary *= percentage;
+		
+	}
+	
 	public String toString() {
 		return 	id 
 				+ ": " 
