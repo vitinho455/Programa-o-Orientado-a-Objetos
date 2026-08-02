@@ -1,6 +1,7 @@
 package application;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
 
@@ -20,21 +21,18 @@ public class Program_Employee {
 		
 		for (int i = 0; i < x; i++) {
 			
-			System.out.print("Employee: " + i + ": ");
-			
-			System.out.println();
-			
-			System.out.print("Id: ");
+			System.out.println("Employee #" + (i + 1) + ": ");
+						
+			System.out.print("Id:");
 			int id = sc.nextInt();
+
+			sc.nextLine();
 			
-			System.out.println();
-			
-			System.out.print("Name :");
+			System.out.print("Name:");
 			String name = sc.nextLine();
 			
-			System.out.println();
 			
-			System.out.print("Salary: ");
+			System.out.print("Salary:");
 			double salary = sc.nextDouble();
 			
 			Employee employee = new Employee(id,name,salary);
@@ -43,6 +41,33 @@ public class Program_Employee {
 			
 		}
 		
+		System.out.println("Enter the employee id that will have salary increase :");
+		int search_id = sc.nextInt();
+		
+		for (Employee employee : list_employee) {
+			
+			if(employee.getId() == search_id) {
+				
+				System.out.println("Enter the percentage: ");
+				double percentage = sc.nextDouble();
+				employee.increaseSalary(percentage);
+				
+			}else {
+				
+				System.out.println("This id does not exist!");			
+				System.out.println();
+				break;
+			}
+			
+		}
+				
+		for (Employee employee : list_employee) {
+		
+			System.out.println(employee);
+		}
+		
+
+		sc.close();
 	}
 
 }
